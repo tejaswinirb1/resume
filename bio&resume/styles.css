@@ -1,0 +1,139 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f4f6;
+}
+
+/* Navigation */
+nav {
+    background-color: #3b82f6;
+    padding: 1rem;
+    color: white;
+}
+
+.nav-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #dbeafe;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.page {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Card styles */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image */
+.profile-img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+/* Typography */
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-badge {
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+/* Experience */
+.experience ul {
+    list-style-position: inside;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.company {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+    .card {
+        padding: 1rem;
+    }
+}
